@@ -21,7 +21,7 @@ jobs:
       - name: Build shards
         run:  shards build
 
-  build docker image:
+  build-docker-image:
     name: Build docker image
     runs-on: ubuntu-latest
     
