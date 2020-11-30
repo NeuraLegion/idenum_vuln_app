@@ -20,6 +20,8 @@ jobs:
         uses: actions/checkout@v1
       - name: Build shards
         run:  shards build
+      - name: Build docker image
+        run:  docker build --no-cache -t test .
 
 
 
