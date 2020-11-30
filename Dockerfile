@@ -4,6 +4,6 @@ ADD . /src
 WORKDIR /src
 RUN shards build --release
 RUN ls bin
-COPY bin/idenumapi /usr/bin/idenumapi
+COPY ./bin/idenumapi /usr/bin/
 ENTRYPOINT ["/bin/sh", "-c", "/usr/bin/idenumapi"]
 EXPOSE 80
