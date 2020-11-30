@@ -24,7 +24,7 @@ jobs:
         run:  docker build --no-cache -t test .
   build-docker-image:
     name: Build docker image
-    runs-on: docker
+    runs-on: ubuntu-latest
     container: docker
     steps:
       - name: Checkout
