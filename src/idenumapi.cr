@@ -138,5 +138,4 @@ WRONG_USER = <<-EOF
   end
   server.bind_tcp 8000
   server.try &.listen
-  
 end
