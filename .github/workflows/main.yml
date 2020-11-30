@@ -30,8 +30,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v1
-      - name: Check sources format
-        run: crystal tool format --check
+  #    - name: Check sources format
+  #      run: crystal tool format --check
 
   unit-tests:
     name: Unit tests
@@ -42,7 +42,7 @@ jobs:
         uses: actions/checkout@v1      
       - name: Shards installing
         run:  shards install 
-      - name: Crystal spec running
-        run:  crystal spec 
+#      - name: Crystal spec running
+#        run:  crystal spec 
       - name: Ameba
         run:  crystal bin/ameba.cr
