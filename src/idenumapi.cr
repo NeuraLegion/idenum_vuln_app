@@ -136,6 +136,6 @@ WRONG_USER = <<-EOF
       context.response.print "400 Bad Request"
     end
   end
-  server.bind_tcp 8000
+  server.bind_tcp "0.0.0.0", 80
   server.try &.listen
 end
